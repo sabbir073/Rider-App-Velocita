@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.parcelwala.parcelwalarider">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/parcelwalarider"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/parcelwalarider_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.BeaconRider"
+        android:usesCleartextTraffic="true">
+        <activity android:name="com.parcelwala.parcelwalarider.Activity.ReturnParcel.ReturnAcceptParcelActivity"></activity>
+        <activity android:name="com.parcelwala.parcelwalarider.Activity.PaidAmount.PaidAmountActivity" />
+        <activity android:name="com.parcelwala.parcelwalarider.Activity.ReturnParcel.RequestReturnActivity" />
+        <activity android:name="com.parcelwala.parcelwalarider.Activity.ReturnParcel.ReturnActivity" />
+        <activity android:name="com.parcelwala.parcelwalarider.Activity.CollectionParcel.CollectionParcelActivity" />
+        <activity android:name="com.parcelwala.parcelwalarider.Activity.DeliveryParcel.AcceptDeliveryActivity" />
+        <activity android:name="com.parcelwala.parcelwalarider.Activity.DeliveryParcel.RequestDeliveryActivity" />
+        <activity android:name="com.parcelwala.parcelwalarider.Activity.DeliveryParcel.DeliveryParcelListActivity" />
+        <activity android:name="com.parcelwala.parcelwalarider.Activity.PickupParcel.AcceptPickActivity" />
+        <activity android:name="com.parcelwala.parcelwalarider.Activity.PickupParcel.RequestPickupActivity" />
+        <activity android:name="com.parcelwala.parcelwalarider.Activity.PickupParcel.PickupParcelActivity" />
+        <activity android:name="com.parcelwala.parcelwalarider.Activity.DashboardActivity" />
+        <activity android:name="com.parcelwala.parcelwalarider.Activity.LoginActivity" />
+        <activity android:name="com.parcelwala.parcelwalarider.Activity.SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

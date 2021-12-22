@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.LoginActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/iv_logo"
+            android:layout_width="250dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="@dimen/twentyFive"
+            android:src="@drawable/parcelwala"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/twenty"
+            android:elevation="@dimen/ten"
+            android:padding="@dimen/ten"
+            app:cardCornerRadius="@dimen/ten"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/iv_logo">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/twenty"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/PlayFairBold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/login"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_h1" />
+
+<!--
+                <EditText
+                    android:id="@+id/et_user_name1"
+                    style="@style/RobotoRegular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/twenty"
+                    android:layout_marginTop="@dimen/twenty"
+                    android:layout_marginEnd="@dimen/twenty"
+                    android:background="@drawable/bg_input_field"
+                    android:drawableStart="@drawable/ic_email_25_grey"
+                    android:drawablePadding="@dimen/ten"
+                    android:gravity="center_vertical"
+                    android:hint="@string/email"
+                    android:inputType="textEmailAddress"
+                    android:padding="@dimen/eight"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sixteen"
+                    tools:ignore="RtlCompat" />
+-->
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:hint="Enter Email "
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/et_user_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="textEmailAddress"
+                            android:drawablePadding="@dimen/ten"
+                            android:drawableLeft="@drawable/ic_email_25_grey" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+<!--
+                <EditText
+                    android:id="@+id/et_password1"
+                    style="@style/RobotoRegular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/twenty"
+                    android:layout_marginTop="@dimen/twenty"
+                    android:layout_marginEnd="@dimen/twenty"
+                    android:background="@drawable/bg_input_field"
+                    android:drawableStart="@drawable/ic_password_25_grey"
+                    android:drawablePadding="@dimen/ten"
+                    android:gravity="center_vertical"
+                    android:hint="@string/password"
+                    android:inputType="textPassword"
+                    android:padding="@dimen/eight"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sixteen"
+                    tools:ignore="RtlCompat" />
+-->
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="0dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_height="wrap_content"
+                        android:hint="Enter Password"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/et_password"
+                            android:layout_width="match_parent"
+                            android:drawablePadding="@dimen/ten"
+                            android:inputType="textPassword"
+                            android:layout_height="wrap_content"
+                            android:drawableLeft="@drawable/ic_password_25_grey" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_login"
+                    style="@style/PlayFairBold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/twentyFive"
+                    android:layout_marginTop="@dimen/thirty"
+                    android:layout_marginEnd="@dimen/twentyFive"
+                    android:layout_marginBottom="@dimen/twenty"
+                    android:background="@drawable/bg_button"
+                    android:text="@string/login"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sixteen" />
+
+                <!--                <androidx.appcompat.widget.AppCompatTextView-->
+                <!--                    android:id="@+id/tv_forgot_password"-->
+                <!--                    android:layout_width="wrap_content"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:textSize="@dimen/text_size_h4"-->
+                <!--                    android:text="@string/forgot_password"-->
+                <!--                    style="@style/RobotoRegular"-->
+                <!--                    android:textColor="@color/black"-->
+                <!--                    android:padding="@dimen/five"-->
+                <!--                    android:layout_gravity="center_horizontal"/>-->
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
